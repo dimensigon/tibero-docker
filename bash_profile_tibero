@@ -1,0 +1,35 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+
+
+# Tibero .bash_profile
+export TB_SID=tibero
+export TB_HOME=/home/tibero/tibero6
+export TB_CONFIG=$TB_HOME/config
+export PATH=$PATH:$TB_HOME/bin:$TB_HOME/client/bin
+export LD_LIBRARY_PATH=$TB_HOME/lib:$TB_HOME/client/lib
+
+export PS1='[SID=$TB_SID \u@\h:\w]$ '
+
+#Cluster Manager (Cluster env. only)
+#export CM_SID=cm0
+#export CM_HOME=$TB_HOME
+
+# Aliases (Optional)
+alias ll='ls -lart'
+
+alias talert='ls -l $TB_HOME/instance/$TB_SID/log/slog/sys.log && tail -f $TB_HOME/instance/$TB_SID/log/slog/sys.log'
+alias config='cd $TB_CONFIG && ls -l *.tip'
+alias tip='cat $TB_CONFIG/$TB_SID.tip && ls -l $TB_CONFIG/$TB_SID.tip'
+alias dsn='cat $TB_HOME/client/config/tbdsn.tbr && ls -l $TB_HOME/client/config/tbdsn.tbr'
+# Tibero .bash_profile
