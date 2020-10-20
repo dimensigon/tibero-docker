@@ -6,13 +6,8 @@
 
 **Target**: Enable the community to have a lightweight container to program PL/SQL oriented applications and to play with Tibero.
 
-Database is already created.
-**DB Name**: tibero
-**Default port**: 8629
-**Username**: SYS
-**Password**: tibero
-
-Use tbAdmin (SQL Developer-like) or another GUI/IDE Tool to connect to Tibero and change the password, or use ALTER USER statement.
+Database is already created. Name: tibero
+Default port: 8629
 
 You can configure encrypted communication if you wish, follow Admin Guide, Chapter 12. It is 5-10 min.
 
@@ -39,15 +34,14 @@ Tibero Database is a proven RDBMS that stands versus Oracle Database or Exadata 
 - Developers: Tibero tbPSM Reference Guide (PSM is the most similar language to PL/SQL
 - DBAs: Tibero Administrator's Guide
 
-[Do you need a schema instead of a Docker container?](https://store.dimensigon.com/plsqlaas-sqlaas) Try the Trial service.
-It is free forever, despite it is mentioning 2 weeks on the website, it will last forever.
+[Do you need a schema instead of a Docker container?](https://store.dimensigon.com/plsqlaas-sqlaas) Get it here.
+It is free forever.
 
 
 ### Client and Interfaces
 
 If you need to use GUIs to program, [here](https://store.dimensigon.com/accessing-you-trial-sqlaas) are the instructions on how to configure them.
 
-JDBC Driver has a direct download in the link above. Inside the container you can find all JDBC Drivers in $TB_HOME/client/lib/jar directory.
 
 ### TmaxSoft Official Website
 

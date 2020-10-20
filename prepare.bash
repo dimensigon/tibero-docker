@@ -25,20 +25,20 @@ output "--- Untar Tibero Software ---"
 su - tibero -c "tar -xf /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz"
 
 output "--- Creating Users and Groups ---"
-su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/bash_profile_tibero -O /home/tibero/.bash_profile"
+su - tibero -c "wget -q https://raw.githubusercontent.com/danimoya/docker-tibero/master/bash_profile_tibero -O /home/tibero/.bash_profile"
 
 output "--- Cleanup files: Tibero Software ---"
 rm /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz
 
 output "--- Downloading necessary files to run ---"
-#Until 20200930
-wget -q --load-cookies /tmp/cookies.txt \
-"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1fI_y3wzQo2ieo2yxqfLxqpgyswr7cskX' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1fI_y3wzQo2ieo2yxqfLxqpgyswr7cskX" \
+#Until End of April 2021
+wget --load-cookies /tmp/cookies.txt \
+"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1mRUj19dZmrqx6lW91QBZn1H7Jn4gglp4' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1mRUj19dZmrqx6lW91QBZn1H7Jn4gglp4" \
 -O /home/tibero/tibero6/license/license.xml && rm -rf /tmp/cookies.txt
 chown tibero:dba /home/tibero/tibero6/license/license.xml 
 
 output "--- ENTRYPOINT start.bash to tibero HOME  ---"
-su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/start.bash \
+su - tibero -c "wget -q https://raw.githubusercontent.com/danimoya/docker-tibero/master/start.bash \
 -O /home/tibero/start.bash && chmod +x /home/tibero/start.bash"
 
 output "--- Finished!  ---"
