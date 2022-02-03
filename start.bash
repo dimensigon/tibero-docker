@@ -21,6 +21,6 @@ output "--- Executing TB_CONFIG/gen_tip.sh ---"
 $TB_CONFIG/gen_tip.sh
 
 output "--- Creating the Database with TB_HOME/bin/tb_create_db.sh ---"
-$TB_HOME/bin/tb_create_db.sh
+$TB_HOME/bin/tb_create_db.sh -ch UTF8
 
 fi
