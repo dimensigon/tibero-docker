@@ -29,7 +29,7 @@ output "--- Creating Users and Groups ---"
 su - tibero -c "wget -q https://raw.githubusercontent.com/danimoya/docker-tibero/master/bash_profile_tibero -O /home/tibero/.bash_profile"
 
 output "--- Cleanup files: Tibero Software ---"
-rm /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz
+rm /tmp/tibero6-bin-FS07_CS_2005-linux64-186930-opt-tested.tar.gz
 
 output "--- Downloading necessary files to run ---"
 wget --load-cookies /tmp/cookies.txt \
