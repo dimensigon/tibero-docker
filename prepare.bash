@@ -26,7 +26,7 @@ output "--- Untar Tibero Software ---"
 su - tibero -c "tar -xf /tmp/tibero6-bin-FS07_CS_2005-linux64-186930-opt-tested.tar.gz"
 
 output "--- Creating Users and Groups ---"
-su - tibero -c "wget -q https://raw.githubusercontent.com/danimoya/docker-tibero/master/bash_profile_tibero -O /home/tibero/.bash_profile"
+su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/bash_profile_tibero -O /home/tibero/.bash_profile"
 
 output "--- Cleanup files: Tibero Software ---"
 rm /tmp/tibero6-bin-FS07_CS_2005-linux64-186930-opt-tested.tar.gz
@@ -38,7 +38,7 @@ wget --load-cookies /tmp/cookies.txt \
 chown tibero:dba /home/tibero/tibero6/license/license.xml 
 
 output "--- ENTRYPOINT start.bash to tibero HOME  ---"
-su - tibero -c "wget -q https://raw.githubusercontent.com/danimoya/docker-tibero/master/start.bash \
--O /home/tibero/start.bash && chmod +x /home/tibero/start.bash"
+su - tibero -c "wget -q https://raw.githubusercontent.com/dimensigon/tibero-docker/master/start.bash \
+-O /home/tibero/start.bash && chmod u+x /home/tibero/start.bash"
 
 output "--- Finished!  ---"
