@@ -33,7 +33,7 @@ rm /tmp/tibero6-bin-FS07_CS_1912-linux64-174424-opt.tar.gz
 output "--- Downloading necessary files to run ---"
 #Until End of April 2021
 wget --load-cookies /tmp/cookies.txt \
-"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1LFYNBGrU7u48DMhBsks_HF1K3CP4ka3S' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1LFYNBGrU7u48DMhBsks_HF1K3CP4ka3S" \
+"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=12_8hVcqLst4F5cEWOAASVkFQW2v8R7V3' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=12_8hVcqLst4F5cEWOAASVkFQW2v8R7V3" \
 -O /home/tibero/tibero6/license/license.xml && rm -rf /tmp/cookies.txt
 chown tibero:dba /home/tibero/tibero6/license/license.xml 
 
