@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -x
 
 function dn() { return 0; } #Do Nothing.
 function fdt() { date +%Y%m%d%H%M:%S:%N; }
