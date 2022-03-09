@@ -17,10 +17,10 @@ function dn() { return 0; } #Do Nothing.
 function fdt() { date +%Y%m%d%H%M:%S:%N; }
 function output() { echo -e "`fdt`:\e[92m$@\e[0m"; }
 
-output "--- Executing TB_CONFIG/gen_tip.sh ---"
+output "--- Executing $TB_CONFIG/gen_tip.sh ---"
 $TB_CONFIG/gen_tip.sh
 
-output "--- Creating the Database with TB_HOME/bin/tb_create_db.sh ---"
+output "--- Creating the Database with $TB_HOME/bin/tb_create_db.sh ---"
 $TB_HOME/bin/tb_create_db.sh -ch UTF8
 
 fi
