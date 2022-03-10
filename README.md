@@ -51,8 +51,6 @@ If you need to use GUIs to program, [here](https://store.dimensigon.com/accessin
 
 Do you want to create your own machine, register in [support.tmaxsoft.com](https://support.tmaxsoft.com) and claim your own trial license.
 
-It lasts for 6 months for each hostname required. You can require the same hostname multiple times.
-
 The license inside the container is not meant for distribution, sale or resale. All rights are reserved to Dimensigon.
 
 ## For Support
@@ -60,7 +58,6 @@ The license inside the container is not meant for distribution, sale or resale. 
 This machine is for testing only. Community Support is at [support.tmaxsoft.com](https://support.tmaxsoft.com).
 
 Feel free to reach us at [Dimensigon](https://www.dimensigon.com) for any questions.
-
 
 #### DISCLAIMER
 
