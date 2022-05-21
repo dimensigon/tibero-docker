@@ -33,7 +33,7 @@ rm /tmp/tibero6-bin-FS07_CS_2005-linux64-186930-opt-tested.tar.gz
 
 output "--- Downloading necessary files to run ---"
 wget --load-cookies /tmp/cookies.txt \
-"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=12_8hVcqLst4F5cEWOAASVkFQW2v8R7V3' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=12_8hVcqLst4F5cEWOAASVkFQW2v8R7V3" \
+"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=15S-MuG_kytJR2LgmPugWbS17OajF3ex5' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=15S-MuG_kytJR2LgmPugWbS17OajF3ex5" \
 -O /home/tibero/tibero6/license/license.xml && rm -rf /tmp/cookies.txt
 chown tibero:dba /home/tibero/tibero6/license/license.xml 
 
