@@ -1,6 +1,5 @@
-## NEW
+# DockerHub
 [Docker Hub](https://hub.docker.com/r/danimoya/tibero)
-## NEW
 
 # Tibero (Docker container)
 
