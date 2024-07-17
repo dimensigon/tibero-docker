@@ -48,7 +48,7 @@ If you need to use GUIs to program, [here](https://store.dimensigon.com/accessin
 
 ### TmaxSoft Official Website
 
-Do you want to create your own machine, register in [support.tmaxsoft.com](https://support.tmaxsoft.com) and claim your own trial license.
+Do you want to create your own machine, register in [TechNet Tmax](https://technet.tmax.co.kr/en/front/main/main.do) and claim your own trial license.
 
 The license inside the container is not meant for distribution, sale or resale. All rights are reserved to Dimensigon.
 
