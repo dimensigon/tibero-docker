@@ -33,7 +33,7 @@ Tibero Database is a proven RDBMS that stands versus Oracle Database or Exadata 
 
 ### Tibero Documentation
 
-[Link](https://technet.tmaxsoft.com/upload/download/online/tibero/pver-20150504-000002/index.html)
+[Link](https://technet.tmax.co.kr/upload/download/online/tibero/pver-20220622-000001/index.html)
 
 - Developers: Tibero tbPSM Reference Guide (PSM is the most similar language to PL/SQL
 - DBAs: Tibero Administrator's Guide
@@ -55,7 +55,7 @@ The license inside the container is not meant for distribution, sale or resale. 
 
 ## For Support
 
-This machine is for testing only. Community Support is at [support.tmaxsoft.com](https://support.tmaxsoft.com).
+This machine is for testing only. Community Support is at [TechNet Tmax](https://technet.tmax.co.kr/en/front/main/main.do).
 
 Feel free to reach us at [Dimensigon](https://www.dimensigon.com) for any questions.
 
