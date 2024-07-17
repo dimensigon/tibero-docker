@@ -14,7 +14,7 @@ export PATH
 
 # Tibero .bash_profile
 export TB_SID=tibero
-export TB_HOME=/home/tibero/tibero6
+export TB_HOME=/home/tibero/tibero7
 export TB_CONFIG=$TB_HOME/config
 export PATH=$PATH:$TB_HOME/bin:$TB_HOME/client/bin
 export LD_LIBRARY_PATH=$TB_HOME/lib:$TB_HOME/client/lib
