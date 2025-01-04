@@ -13,7 +13,6 @@ FROM centos:7
 
 LABEL maintainer="contact@dimensigon.com"
 
-
 COPY prepare.bash /root/prepare.bash
 
 COPY CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
@@ -26,7 +25,6 @@ ADD --chown=tibero:dba https://store.dimensigon.com/wp-content/tibero-docker/tib
 
 ADD --chown=tibero:dba https://store.dimensigon.com/wp-content/tibero-docker/license.xml /home/tibero/tibero7/license/
 
-
 RUN bash /root/prepare.bash
 
 WORKDIR /home/tibero
@@ -36,7 +34,6 @@ RUN tar -xf tibero7-latest.tar.gz
 RUN rm tibero7-latest.tar.gz
 
 RUN chown -R tibero:dba /home/tibero
-
 
 ENTRYPOINT su - tibero -c "bash /home/tibero/start.bash" && /bin/bash
 
