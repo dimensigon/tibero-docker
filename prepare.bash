@@ -13,6 +13,10 @@ gcc-c++ libstdc++-devel \
 compat-libstdc++ libaio libaio.x86_64 libaio-devel net-tools \
 kernel-headers kernel-devel perl make systemd tree wget curl supervisor openssh-server
 
+output "--- Installing X11 Packages ---"
+
+yum -q -y install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps xterm
+
 yum -q clean packages
 
 output "--- Creating Users and Groups ---"

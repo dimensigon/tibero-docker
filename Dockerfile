@@ -11,7 +11,7 @@
 
 FROM centos:7
 
-LABEL maintainer="contact@dimensigon.com"
+LABEL maintainer="daniel.moya@dimensigon.com"
 
 COPY prepare.bash /root/prepare.bash
 
@@ -26,6 +26,8 @@ ADD --chown=tibero:dba https://store.dimensigon.com/wp-content/tibero-docker/tib
 ADD --chown=tibero:dba https://store.dimensigon.com/wp-content/tibero-docker/license.xml /home/tibero/tibero7/license/
 
 RUN bash /root/prepare.bash
+
+ENV DISPLAY=:10.0
 
 WORKDIR /home/tibero
 
